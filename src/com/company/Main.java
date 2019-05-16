@@ -19,9 +19,7 @@ public class Main {
             return -1;
 
         int jumps = 1;
-
         int steps = array[0];
-
         int maxReach = array[0];
 
         for(int i=0; i < array.length; i++){
@@ -34,7 +32,7 @@ public class Main {
             if(steps==0){
                 if(i>maxReach){return -1;}
                 jumps++;
-                steps=maxReach - i;
+                steps=maxReach-i;
             }
 
             steps--;
